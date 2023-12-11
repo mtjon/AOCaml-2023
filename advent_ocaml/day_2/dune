@@ -1,0 +1,4 @@
+(executable
+ (name day2)
+ (libraries advent_ocaml )
+ (modules Day2))
