@@ -1,0 +1,28 @@
+(lang dune 3.10)
+
+(name advent_ocaml)
+
+(generate_opam_files true)
+
+(source
+ (github username/reponame))
+
+(authors "Martin Tjon")
+
+(maintainers "Martin Tjon")
+
+(license LICENSE)
+
+(documentation https://url/to/documentation)
+
+(package
+ (name advent_ocaml)
+ (synopsis "Advent of Code 2023")
+ (description "Advent of Code 2023 solutions in OCaml")
+ (depends ocaml)
+ (tags
+  (topics aoc "advent of code")))
+
+(using menhir 2.1)
+
+; See the complete stanza docs at https://dune.readthedocs.io/en/stable/dune-files.html#dune-project

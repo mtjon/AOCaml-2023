@@ -15,6 +15,7 @@
           # You can add "development" packages here. They will get added to the devShell automatically.
           ocaml-lsp-server = "*";
           ocamlformat = "*";
+          utop = "*";
         };
         query = devPackagesQuery // {
           ## You can force versions of certain packages here, e.g:
@@ -24,6 +25,8 @@
           # ocaml-system = "4.14.0";
           ## - or force ocamlfind to be a certain version:
           # ocamlfind = "1.9.2";
+          menhir = "*";
+          core = "*";
         };
         scope = on.buildOpamProject' { } ./. query;
         overlay = final: prev:

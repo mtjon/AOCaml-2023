@@ -1,0 +1,8 @@
+(library
+ (public_name advent_ocaml)
+ (name advent_ocaml))
+
+(menhir
+  (modules parser))
+
+(ocamllex lexer)
