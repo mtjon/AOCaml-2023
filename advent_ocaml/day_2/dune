@@ -2,3 +2,8 @@
  (name day2)
  (libraries advent_ocaml )
  (modules Day2))
+
+(menhir
+  (modules parser))
+
+(ocamllex lexer)
