@@ -1,4 +1,9 @@
 (executable
  (name day1)
- (libraries advent_ocaml str)
+ (libraries str)
  (modules Day1))
+
+(menhir
+  (modules parser))
+
+(ocamllex lexer)
