@@ -3,8 +3,7 @@ type cube =
   | Green of int
   | Blue of int
 
-type draw = 
-  | Draw of cube list
+type draw = { red: int; green: int; blue: int }
 
 type game =
   | Game of (int * draw list)
