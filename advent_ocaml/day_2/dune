@@ -1,9 +1,13 @@
 (executable
  (name day2)
  (libraries advent_ocaml )
- (modules Day2))
+ (modules Day2 Ast Lexer Parser))
 
 (menhir
   (modules parser))
 
 (ocamllex lexer)
+
+(env
+  (dev
+    (flags (:standard -w -32))))
