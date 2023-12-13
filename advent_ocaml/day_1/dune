@@ -1,7 +1,7 @@
 (executable
  (name day1)
  (libraries str)
- (modules Day1))
+ (modules Day1 Ast Parser Lexer))
 
 (menhir
   (modules parser))

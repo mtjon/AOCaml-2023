@@ -1,6 +1,5 @@
 open List
-open Advent_ocaml
-open Str
+(*open Str*)
 
 (** [parse_line line] is the concatenation of first and last digit in [line]. *)
 let parse_line line =
